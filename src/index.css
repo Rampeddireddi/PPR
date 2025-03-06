@@ -2,7 +2,10 @@
 @import "tailwindcss";
 html {
     scroll-behavior: smooth;
+   box-sizing: border-box;
     user-select: none;
+    width: 100vw;
+    overflow-x: hidden;
   }
   
   /* Link hover states */
