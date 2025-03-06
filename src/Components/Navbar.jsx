@@ -35,7 +35,7 @@ const Navbar = () => {
           <li className='hover:text-amber-500'><a href="#about">About</a></li>
           <li className='hover:text-amber-500'><a href="#skills">Skills</a></li>
           <li className='hover:text-amber-500'><a href="#experience">Experience</a></li>
-          <li className='hover:text-amber-500'><a href="#projects">Projects</a></li>
+          <li className='hover:text-amber-500'><a href="#projects" >Projects</a></li>
           <li className='hover:text-amber-500'><a href="/PPR_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
         </ul>
       </nav>
