@@ -18,7 +18,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`w-full text-white sticky top-0 z-50 transition-all duration-300 ${
+    <div className={`w-full text-white fixed top-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(255,140,0,0.3),rgba(0,0,0,1))] backdrop-blur-md' : 'bg-transparent'
     }`}>
       <nav className='flex justify-between items-center p-4 max-w-7xl mx-auto'>
