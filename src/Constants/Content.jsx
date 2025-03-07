@@ -43,7 +43,7 @@ export const projects = [
   },
 
   {
-    name: "Voicera - AI Voice Assistant",
+    name: "Voicera - Voice Assistant",
     year: "Mar 2024",
     techStack: ["React.js", "Tailwind CSS"],
     description: "An AI-powered voice assistant that lets users open websites and search the internet using voice commands.",
