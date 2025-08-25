@@ -15,7 +15,7 @@ Developed AWS Lambda functions for backend processing, enhancing scalability and
     technologies: ['AWS', 'React.js', 'Tailwind CSS']
   },
   {
-    role: "Web Development Intern",
+    role: "Frontend Development Intern",
     company: "DTE AP",
     year: "Jan 2023 - June 2023",
     description: `Engineered a web-based application for automating the affiliation process of educational institutions, reducing manual paperwork and improving processing efficiency by 60%.
@@ -27,33 +27,40 @@ Developed a structured multi-dashboard system for administrators, applicants, an
 
 export const projects = [
   {
-    name: "Personal Portfolio Website",
+    name: "Expense Tracker",
+    year: " June 2025- July 2025",
+    techStack: ["React.js", "Tailwind CSS","Node.js","Express.js","MongoDB","Gemini API"],
+    description: "A simple web app to track, categorize, and manage your daily expenses for better financial control.",
+    image: "/ExpenseTracker.png",
+    live:"https://stormledgers-nine.vercel.app/",
+    git:"https://github.com/Rampeddireddi/AWS-Stormledgers-frontend"
+    
+  },
+  {
+    name: "Vortex: An AI Assistant Built on My Resume",
     year: "Feb 2025",
-    techStack: ["React.js", "Tailwind CSS"],
-    description: "A modern portfolio website to showcase projects, skills, and experience with a clean UI and smooth animations.",
-    image: "/portfolio-proj.jpg"
-
-  },
-  {
-    name: "Online Doctor Appointment Booking Website",
-    year: "Aug 2024 - Dec 2024",
-    techStack: ["React.js", "Tailwind CSS", "AWS"],
-    description: "A user-friendly platform for booking doctor appointments with a seamless UI and serverless backend for scalability.",
-    image: "/doct-app.png"
+    techStack: ["React.js", "Tailwind CSS", "Gemini API"],
+    description: "an AI-powered web app that uses the Gemini API to answer user queries about me based on my resume.",
+    image: "/Vortex.jpg",
+    live:"https://vortex-ai-ten.vercel.app/",
+    git:"https://github.com/Rampeddireddi/VortexAI"
   },
 
   {
-    name: "Voicera - Voice Assistant",
-    year: "Mar 2024",
-    techStack: ["React.js", "Tailwind CSS"],
-    description: "An AI-powered voice assistant that lets users open websites and search the internet using voice commands.",
-    image: "/voicera.jpg"
+    name: "AWS EC2 Auto Scheduler",
+    year: "July 2024",
+    techStack: ["AWS Ec2", "AWS Lambda","Python"],
+    description: "An AWS Lambda–based automation that schedules start and stop of EC2 instances to optimize costs.",
+    image: "/ec2aws.png",
+    git:"https://github.com/Rampeddireddi/Automated-EC2-Lifecycle-and-Snapshot-Management-using-AWS-Lambda-and-Boto3"
   },
   {
     name: "Movie Streaming Web Application",
     year: "Sep 2023",
     techStack: ["HTML", "CSS", "JavaScript"],
-    description: "A simple yet engaging movie streaming platform with a responsive UI and interactive search features.",
-    image: "/movie.webp"
+    description: "A responsive frontend web application inspired by modern streaming platforms. Built with HTML, CSS, and JavaScript to showcase movie browsing, search, and UI interactions.",
+    image: "/movie.webp",
+    live:"https://streamx-sandy.vercel.app/",
+    git:"https://github.com/Rampeddireddi/StreamX"
   },
 ];

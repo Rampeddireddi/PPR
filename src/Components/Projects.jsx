@@ -20,10 +20,14 @@ const Projects = () => {
                    <motion.div whileInView={{opacity:1,x:0}}
             initial={{x:100, opacity:0}}
             transition={{duration:0.5}} className='w-full min-sm:w-[70%] flex flex-col gap-3  '>
-                   <p>{project.name}, {project.year}</p>
+                   <div className='flex justify-between flex-wrap'> <p>{project.name}, {project.year}</p> 
+                   <p> {project.live ? 
+                   (<a href={project.live} target="_blank" rel="noopener noreferrer" className='pr-2'>Preview</a>) : null}  
+                   <a href={project.git} target="_blank" rel="noopener noreferrer">Github</a>
+                   </p> </div>
                    <p className='text-justify tracking-tight text-neutral-400'>{project.description}</p>
                    <div className='flex gap-2 text-sm'>{project.techStack.map((tech,index)=>(
-                     <div key={index} className='text-amber-900'>{tech}</div>
+                     <div key={index} className='text-amber-800'>{tech}</div>
                    ))}</div>
                    </motion.div>
                    
