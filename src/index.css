@@ -26,6 +26,79 @@ html {
   100% { transform: scale(1); opacity: 1; filter: blur(0); }
 }
 
+  @keyframes scrolly {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* NOTE: use .animate-scroll to match Tailwind-style class usage */
+  .animate-scroll {
+    animation: scrolly 50s linear infinite;
+    display: flex;           /* ensure track is a single horizontal row */
+    gap: 2.5rem;             /* spacing between items */
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .animation-hover-pause:hover {
+    animation-play-state: paused;
+  }
+
+.fancy-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 0.75rem 0;
+    /* subtle glowing border */
+    box-shadow: 0 6px 22px rgba(var(--amber-glow), 0.08), 0 0 28px rgba(var(--amber-glow), 0.09);
+    border: 1px solid rgba(255,255,255,0.02);
+    background-color: #000; /* fallback */
+  }
+
+  
+
+  /* inner track should be above overlays */
+  .fancy-track {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  /* softer text style and subtle glow */
+  .fancy-text {
+    font-weight: 500;               /* not too bold */
+    font-size: 1.35rem;             /* ~text-3xl feel but slightly lighter */
+    letter-spacing: 0.4px;
+    color: rgba(255,255,255,0.95);
+    text-shadow: 0 0 8px rgba(255,255,255,0.06), 0 0 18px rgba(var(--amber-glow), 0.06);
+    padding: 0.25rem 0.5rem;
+    white-space: nowrap;
+  }
+
+  /* optional pill behind each item for subtle depth */
+  .fancy-pill {
+    background: rgba(255,255,255,0.02);
+    border-radius: 9999px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+
+ .rotate-banner {
+    transform: rotate(5deg);
+    transform-origin: center;
+  }
+
+  /* smooth scaling to avoid pixelation */
+
+  /* responsive tuning */
+  @media (min-width: 1024px) {
+    .fancy-text { font-size: 1.6rem; }
+  }
+
 .animate-cinematic {
   animation: cinematic 0.8s ease forwards;
 }

@@ -7,6 +7,7 @@ import Experience from './Components/Experience'
 import Projects from './Components/Projects'
 import Footer from './Components/Footer'
 import './App.css'
+import Banner from './Components/Banner'
 import WelcomeScreen from "./Components/WelcomeScreen";
 function App() {
 const [loaded, setLoaded] = useState(false);
@@ -18,6 +19,8 @@ const [loaded, setLoaded] = useState(false);
    {loaded && <>
    <Navbar></Navbar>
    <Hero/>
+   <Banner/>
+
    <About/>
    <Skills/>
   <Experience/>
